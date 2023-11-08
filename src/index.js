@@ -72,10 +72,37 @@ function Card() {
   );
 }
 
+function Home() {
+  return (
+    <div className="Home">
+      <h1>CS 230L</h1>
+      <h2>Section - 003</h2>
+      <p>WVU ID: 800366523</p>
+      <p>Hi I am Jayden Daniello</p>
+    </div>
+  );
+}
+
+function Contact() {
+  return (
+    <div className="Contact">
+      <h1>Contact Us</h1>
+      <p>First Name</p>
+      <p>Last Name</p>
+      <p>Phone Number</p>
+      <p>Email Address</p>
+      <p>Country</p>
+      <p>Message</p>
+    </div>
+  );
+}
+
 
 export {
   Navbar, 
-  Card
+  Card,
+  Home,
+  Contact
 };
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

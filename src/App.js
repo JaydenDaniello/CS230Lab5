@@ -1,18 +1,22 @@
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Navbar } from './index';
 import { Card } from './index';
+import { Home } from './index';
 
 
 
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>
       <Navbar />
-      <h1>CS 230L</h1>
-      <h2>Section - 003</h2>
-      <p>WVU ID: 800366523</p>
-      <p>Hi I am Jayden Daniello</p>
-      <Card />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/card" element={<Card />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
