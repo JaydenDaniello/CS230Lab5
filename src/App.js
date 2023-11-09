@@ -1,9 +1,9 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Navbar } from './index';
-import { Card } from './index';
+import { Navbar } from './Navbar';
+import { Card } from './Card';
 import { Home } from './index';
-import { Contact } from './index';
+import { Contact } from './Contact';
 
 
 
